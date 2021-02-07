@@ -2,7 +2,7 @@
    Public API Request
 ======================================== */
 
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -14,9 +14,9 @@ html, body {
 }
 
 body {
-    font-family: "Nunito", sans-serif;
+    font-family: 'Libre Baskerville', serif;
     text-align: center;
-    background: rgba(235, 235, 235, 0.9);
+    background: rgba(199, 255, 243, 0.76);
 }
 
 header {
@@ -29,14 +29,17 @@ header {
 }
 
 header h1 {
-    font-size: 1.25em;
-    color: rgba(50, 50, 50, 0.9);
+    font-size: 1.45em;
+    color: rgba(0, 0, 0, 0.9);
     margin-top: 35px;
+    transition: color .4s, transform .4s;
 }
+
+
 
 .search-input {
     padding: 0.4rem 1rem;
-    border: 1px solid rgba(200, 200, 200, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.9);
     border-radius: 0.25rem 0 0 0.25rem ;
     max-width: 20rem;
     transition: .4s ease-out;
@@ -44,7 +47,8 @@ header h1 {
 }
 
 .search-input:active, .search-input:hover, .search-input:focus {
-    border: 1px solid rgba(50, 50, 50, 0.9);
+    border: 1px solid rgb(231, 171, 5);
+    
 }
 
 .search-submit {
@@ -52,14 +56,14 @@ header h1 {
     height: 33px;
     background: rgba(245, 245, 245, 0.9);
     border-radius: 0 0.25rem 0.25rem 0;
-    border: 1px solid rgba(200, 200, 200, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.9);
     transition: .4s ease-out;
     outline: none;
 }
 
 .search-submit:active, .search-submit:hover, .search-submit:focus {
     background: rgba(255, 255, 255, 0.9);
-    border: 1px solid rgba(50, 50, 50, 0.9);
+    border: 1px solid rgba(231, 171, 5);
 }
 
 
@@ -85,11 +89,11 @@ header h1 {
     cursor: pointer;
     width: 100%;
     max-width: 360px;
-    margin: 10px 10px 20px;
-    padding: 10px;
-    background: rgba(245, 245, 245, 0.9);
-    border-radius: 0.25em;
-    border: 1px solid rgba(50, 50, 50, 0.3);
+    margin: 8px 8px 20px;
+    padding: 8px;
+    background: rgba(44, 44, 43, 0.904);
+    border-radius: 1em;
+    border: 1px solid rgba(231, 171, 5);
     transition: .4s ease-out;
     overflow: hidden;
 }
@@ -97,7 +101,7 @@ header h1 {
 .card-img {
     width: 95px;
     margin: 10px 15px auto 10px;
-    border-radius: 50%;
+    border-radius: 30%;
 }
 
 .card-info-container {
@@ -106,11 +110,13 @@ header h1 {
 
 .card-name {
     margin: 20px auto 0;
+    color:rgba(231, 171, 5);
 }
 
 .card-text {
     font-size: 0.9em;
-    color: rgba(50, 50, 50, 0.7);
+    overflow-wrap: break-word;
+    color: rgba(255, 255, 255, 0.9);
     margin: 7px auto;
     transition: .4s ease-out;
 }
@@ -119,6 +125,11 @@ header h1 {
     text-transform: capitalize;
 }
 
+#not-found {
+    color: rgba(231, 171, 5);
+    font-size: 1.5em;
+    margin-top: 4em;
+}
 
 /* ===================================== 
    Modal
@@ -155,13 +166,13 @@ header h1 {
     background: rgba(0, 0, 0, 0.8);
     outline: none;
     border-radius: 0.25em;
-    border: 1px solid rgba(50, 50, 50, 0.3);
+    border: 1px solid rgba(231, 171, 5);
 }
 
 .modal-img {
     width: 150px;
     margin-top: 35px;
-    border-radius: 50%;
+    border-radius: 30%;
 }
 
 .modal-name {
@@ -203,6 +214,7 @@ header h1 {
     padding: 0.75em 1.5em;
     background: rgba(0, 0, 0, 0.8);
     border-radius: 0.35em;
+    border-color:rgb(231, 171, 5);
     transition: .4s ease-out;
     outline: none;
   }
@@ -226,6 +238,8 @@ header h1 {
         padding-left: 25px;
     }
 
+    
+
     .header-text-container {
         text-align: left;
     }
@@ -247,6 +261,11 @@ header h1 {
 
 @media (min-width: 1024px) {
 
+    header h1:hover {
+        color: rgb(231, 171, 5);
+        transform: translate(20px, 0px);
+    }
+
     .card:hover {
         background: rgba(255, 255, 255, 1);
         border: 1px solid rgba(50, 50, 50, 0.9);
@@ -256,8 +275,8 @@ header h1 {
         color: rgba(25, 25, 25, 1); 
     }
 
-    .btn:hover {
+    .btn:hover, .modal-prev:hover, .modal-next:hover, .modal-close-btn:hover {
         background: rgba(255, 255, 255, 1);
-        color: rgba(25, 25, 25, 1); 
+        color: rgba(231, 171, 5); 
     }
 }
