@@ -3,7 +3,7 @@
 This project is centered around implementing the fetch API to retrieve data, configure it using JSON, and dynamically display employee profiles based on JSON data retrieved. The data in this project is pulled from the random user API at https://randomuser.me/. 
 --------------------------------------------------------------------------------------
 ***** Summary *****            
-
+--------------------------------------------------------------------------------------
 - The project can be broken down simply in three major steps:
 
     * First, I used a fetch request to retrieve 12 users from the English demographic to enable effective searching using English characters. The random user API gives definition on which url to use in order to specify your request at https://randomuser.me/documentation.
