@@ -1,4 +1,4 @@
-# public-api_employees
+# Fetch API - Employee Startup Demo
 
 This project is centered around implementing the fetch API to retrieve data, configure it using JSON, and dynamically display employee profiles based on JSON data retrieved. The data in this project is pulled from the random user API at https://randomuser.me/. 
 --------------------------------------------------------------------------------------
