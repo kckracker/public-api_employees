@@ -29,7 +29,7 @@ header {
 }
 
 header h1 {
-    font-size: 1.45em;
+    font-size: 1.9em;
     color: rgba(0, 0, 0, 0.9);
     margin-top: 35px;
     transition: color .4s, transform .4s;
@@ -152,7 +152,7 @@ header h1 {
     margin: 10px auto auto;
     padding-bottom: 15px;
     background: rgba(255, 255, 255, 1);
-    border-radius: 0.25em;
+    border-radius: 1em;
     border: 1px solid rgba(100, 100, 100, 0.3);
     transition: .4s ease-out;
 }
