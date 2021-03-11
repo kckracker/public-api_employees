@@ -262,7 +262,7 @@ header h1 {
 @media (min-width: 1024px) {
 
     header h1:hover {
-        color: rgb(231, 171, 5);
+        color: rgb(255, 255, 255, 1);
         transform: translate(20px, 0px);
     }
 
