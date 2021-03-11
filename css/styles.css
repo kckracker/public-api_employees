@@ -16,7 +16,7 @@ html, body {
 body {
     font-family: 'Libre Baskerville', serif;
     text-align: center;
-    background: rgba(199, 255, 243, 0.76);
+    background: rgba(24, 84, 203);
 }
 
 header {
@@ -30,7 +30,7 @@ header {
 
 header h1 {
     font-size: 1.9em;
-    color: rgba(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 1);
     margin-top: 35px;
     transition: color .4s, transform .4s;
 }
@@ -262,7 +262,7 @@ header h1 {
 @media (min-width: 1024px) {
 
     header h1:hover {
-        color: rgb(255, 255, 255, 1);
+        color: rgb(231, 171, 5);
         transform: translate(20px, 0px);
     }
 
