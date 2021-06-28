@@ -9,17 +9,17 @@ ___
 ___
 The project can be broken down simply in three major steps:
 
-1.   First, I used a fetch request to retrieve 12 users from the English demographic to enable effective searching using English characters. The random user API gives definition on which url to use in order to specify your request at https://randomuser.me/documentation.
+  1. First, I used a fetch request to retrieve 12 users from the English demographic to enable effective searching using English characters. The random user API gives definition on which url to use in order to specify your request at https://randomuser.me/documentation.
 
-2.   Second, I created a couple helper functions to call with the Promise.all method to ensure all promises were finished fetching.
+  2. Second, I created a couple helper functions to call with the Promise.all method to ensure all promises were finished fetching.
 
--       The addEmployee function accepts the JSON data and dynamically creates both employee cards for the gallery as well as hidden modal windows for display with the viewModal function.
+   - The addEmployee function accepts the JSON data and dynamically creates both employee cards for the gallery as well as hidden modal windows for display with the viewModal function.
 
--       The searchEmployee function receives the user's input from the search bar and filters through the employee cards, hiding any employees whose names do not contain user input.
+  - The searchEmployee function receives the user's input from the search bar and filters through the employee cards, hiding any employees whose names do not contain user input.
 
--       The viewModal function removes the hidden property of previously created HTML and inserts listeners to the previous, next, and close buttons for user navigation.
+  - The viewModal function removes the hidden property of previously created HTML and inserts listeners to the previous, next, and close buttons for user navigation.
 
-3.   Finally, I created the addListeners function to add a click listener to the search button and keyup listener for the search input. Additionally, the addListeners function loops through the display of employee cards to add click listeners on each one, calling the viewModal function upon user click.
+  3. Finally, I created the addListeners function to add a click listener to the search button and keyup listener for the search input. Additionally, the addListeners function loops through the display of employee cards to add click listeners on each one, calling the viewModal function upon user click.
 
 ___
 ## CSS Styling Changes
